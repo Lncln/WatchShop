@@ -2,7 +2,7 @@
   .updates .updates__footages > .div3 {
     display: none;
   }
-  .updates .updates__footages .div1, .updates .updates__footages .div2 {
+  .updates .updates__footages > .div1, .updates .updates__footages .div2 {
     margin-left: -15px;
   }
   .catalog {

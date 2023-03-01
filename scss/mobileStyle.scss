@@ -1,11 +1,12 @@
 @media screen and (min-width: 325px) and (max-width: 768px) {
+
     .updates {
         & .updates__footages {
             > .div3 {
                 display: none;
             }
-            .div1, .div2 {
-                margin-left: -15px;
+            & .div1, .div2 {
+                display: none;
             }
         }
     }
@@ -13,8 +14,25 @@
     .catalog {
         flex-direction: column-reverse;
         background-image: url(../images/catalog/background_banner_1.svg);
+        padding: 12px 30px;
+
+        & .catalog__sliderBlock {
+            display: none;
+        }
+
         & .catalog__disclaimer {
-            margin-bottom: 30px;
+            margin-bottom: auto;
+        }
+
+        & .catalog__disclaimer .catalog__disclaimerInfo {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: #444240;
+            width: auto;
+            margin-bottom: 0px;
         }
     }
 
@@ -27,15 +45,56 @@
         }
     }
 
-    .header__navigation {
-        margin: 0 10px;
-    }
+    .header {
+        justify-content: space-around;
 
-    .currentCollection {
-        // flex-direction: column;
-    }
+        & .header__logoBlock {
+            margin-left: 0px;
+        }
+
+        & .header__buttonsBlock {
+            margin-right: 0px;
+        }
+
+        & .header__navigation {
+            margin: 0 10px;
+            display: none;
+        }
+    } 
 
     .currentCollection__example {
         display: none;
+    }
+
+    .footer {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .header__logoBlock, .updates__block {
+        margin-left: 10px;
+    }
+
+
+    .currentCollection {
+        height: 630px;
+        display: flex;
+        background: #FDFDFB;
+        margin-bottom: 76px;
+        background-image: url(../images/currentCollection/example/Ellipse.svg);
+        background-repeat: no-repeat;
+        background-position: 53%
+    }
+
+    .currentCollection__block {
+        display: flex;
+        flex-direction: column;
+        width: 408px;
+        margin: auto;
+    }
+
+    .updates .updates__block {
+        margin: 0px 0px;
+        padding: 5px;
     }
 }
